@@ -10,4 +10,10 @@ class GdpSpider(scrapy.Spider):
         'https://www.worldpopulationreview.com/countries/countries-by-national-debt/']
 
     def parse(self, response):
-        pass
+        title = response.xpath("//td/h1/text()").get()
+        countries = response.xpath("//td/a/text()").getall()
+
+        yield {
+            'title': title,
+            'countries': countries
+        }
