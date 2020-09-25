@@ -21,7 +21,7 @@ class GdpSpider(scrapy.Spider):
     # def parse(self, response):
     #     # title = response.xpath("//td/h1/text()").get()
     #     # countries_1 = response.xpath("//td/a/text()").getall()
-    #     countries = response.xpath("//td/a")
+        # countries = response.xpath("//td/a")
     #     name_list = []
     #     link_list = []
     #     for country in countries:
